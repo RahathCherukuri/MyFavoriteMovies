@@ -397,6 +397,8 @@ class LoginViewController: UIViewController {
             }
             print("id: ", id)
             print("username: ", username)
+            self.appDelegate.userID = id
+            self.completeLogin()
         }
         /* 7. Start the request */
         task.resume()

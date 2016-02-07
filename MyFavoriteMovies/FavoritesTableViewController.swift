@@ -105,6 +105,7 @@ class FavoritesTableViewController: UITableViewController {
 
             /* 6. Use the data! */
             self.movies = Movie.moviesFromResults(results)
+            print("Movies: ", self.movies)
             dispatch_async(dispatch_get_main_queue()) {
                 self.tableView.reloadData()
             }

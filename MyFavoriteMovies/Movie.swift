@@ -34,7 +34,6 @@ struct Movie {
         for result in results {
             movies.append(Movie(dictionary: result))
         }
-        
         return movies
     }
     
