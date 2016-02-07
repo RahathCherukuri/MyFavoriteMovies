@@ -41,7 +41,7 @@ class MovieDetailViewController: UIViewController {
         
         super.viewWillAppear(animated)
         
-        /* TASK: Get movies from favorite list, then populate the table */
+        /* Get movies from favorite list, then populate the table */
         
         /* 1. Set the parameters */
         let methodParameters = [
@@ -133,7 +133,7 @@ class MovieDetailViewController: UIViewController {
         task.resume()
         
         
-        /* TASK B: Get the poster image, then populate the image view */
+        /* Get the poster image, then populate the image view */
         if let movie = movie, posterPath = movie.posterPath {
             
             /* 1B. Set the parameters */
@@ -196,7 +196,7 @@ class MovieDetailViewController: UIViewController {
     @IBAction func unFavoriteButtonTouchUpInside(sender: AnyObject) {
         print("unFavoriteButtonTouchUpInside")
         
-        /* TASK: Remove movie as favorite, then update favorite buttons */
+        /* Remove movie as favorite, then update favorite buttons */
         /* 1. Set the parameters */
         
         let methodParameters = [
@@ -260,7 +260,7 @@ class MovieDetailViewController: UIViewController {
     @IBAction func favoriteButtonTouchUpInside(sender: AnyObject) {
         print("\n\nfavoriteButtonTouchUpInside")
         
-        /* TASK: Remove movie as favorite, then update favorite buttons */
+        /* Add movie as favorite, then update favorite buttons */
         /* 1. Set the parameters */
         
         let methodParameters = [
